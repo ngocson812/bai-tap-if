@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if 7</title>
+</head>
+<body>
+<h3>Tính cước điện thoại</h3>
+Bảng giá: <br>
+Trên 100p: 500k/ Trên 60p: 400k/ Trên 30p: 300k/  10p: 200k <br><br>
+Nhập thời gian gọi: <br>
+<input type="number" id="so"> <br> <br>
+<button onclick="tgian()">Tính tiền</button>
+<script>
+    function tgian(){
+        let tggoi = document.getElementById("so").value;
+        if (tggoi > 100) {
+            document.write("Cước phí là 500k VND")
+        } else if (tggoi > 60) {
+            document.write("Cước phí là 400k VND")
+        } else if (tggoi>30){
+            document.write("Cước phí là 300k VND")
+        } else if (tggoi > 10){
+            document.write("Cước phí là 200k VND")
+        } else {
+            document.write("Cước phí là 100k VND")
+        }
+    }
+</script>
+</body>
+</html>
